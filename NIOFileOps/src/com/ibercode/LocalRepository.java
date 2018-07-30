@@ -12,12 +12,11 @@ public class LocalRepository {
 		BufferedReader bufferReader = new BufferedReader(new FileReader("C:\\moviesDB.txt"));
 		
 		bufferReader.lines()
-		.collect(Collectors.toList())
-		.stream()
-		.limit(10)
-		.forEach(System.out::println);
+			.collect(Collectors.toList())
+			.stream()
+			.limit(10)
+			.forEach(System.out::println);
 		
 		bufferReader.close();
 	}
-
 }
