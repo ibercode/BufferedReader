@@ -11,8 +11,8 @@ public class URLRepository {
 
 	public void showMovies() throws IOException {
 
-		URL url = new URL("https://drive.google.com/uc?id=1hrvGXw1RDytE1jBB4WmfLCUutlhHjyVm&export=download");
-
+		URL url = new URL("https://ibercode.com/shared/moviesDB.txt");
+		
 		BufferedReader bufferReader = new BufferedReader(
 				new InputStreamReader(url.openStream(), StandardCharsets.UTF_8));
 
